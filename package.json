@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/thomromano/practice-seq#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "require": "^2.4.20",
     "sequelize": "^4.37.10"
   }
 }
