@@ -1,7 +1,19 @@
 module.exports = function(sequelize, DataTypes) {
-    var Contact = sequelize.define("Contact", {
-      contact_name: DataTypes.STRING,
-      phome_number: DataTypes.STRING,
+    sequelize.define('Contact', {
+        //object representing properties of the model *string or INTEGER 
+         phonenumber: {
+             type: DataTypes.INTEGER, 
+             unique: true, 
+             allowNull: false, 
+             primaryKey: true
+         },
+         password:{ 
+             type: DataTypes.STRING,
+             unique: true
+         },
+         body:{
+             type: DataTypes.TEXT
+         }
       
     });
   
