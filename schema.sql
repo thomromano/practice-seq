@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS contact_db;
+DROP DATABASE IF EXISTS contacts_db;
 
-CREATE DATABASE contact_db;
+CREATE DATABASE contacts_db;
 
-USE contact_db;
+
 

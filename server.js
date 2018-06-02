@@ -39,3 +39,12 @@ db.sequelize.sync({ force: true }).then(function() {
     console.log("App listening on PORT " + PORT);
   });
 });
+
+const today = new Date();
+// console.log(today);
+
+const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+const time = `${today.getHours()}:${today.getMinutes()}`;
+const dateTime = `${date} ${time}`;
+console.log(`This is today;s date: ${date}`);
+console.log(`This is right now: ${dateTime}`);
